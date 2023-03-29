@@ -10,21 +10,28 @@ html {
 }
 
 .e img {
-    height: 200px;
-    width: 150px;
+    margin-left: 50px;
+    height: 250px;
+    width: 250px;
 }
 
 body {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-        background-image: url("wp2461878.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("wp2461878.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.main{
-    
+
+.main h1 {
+    font-size: 3.5vw;
 }
+
+.main p {
+    font-size: 2vw;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -48,6 +55,16 @@ li a:hover {
     background-color: #111;
 }
 
+.e li img:hover {
+    background-color: rgba(1, 1, 1, 0);
+    box-shadow: 0 0 50px 15px #89C4E1;
+}
+
+.e li a:hover {
+    background-color: rgba(1, 1, 1, 0);
+
+}
+
 .active {
     background-color: lightskyblue;
 }
@@ -59,8 +76,9 @@ nav a {
 nav a:hover {
     color: lightblue;
 }
+
 .e a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
@@ -71,11 +89,13 @@ h1 {
     text-align: center;
     color: white;
 }
-footer{
+
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 footer ul {
     list-style-type: none;
     margin: 0;
@@ -88,9 +108,7 @@ footer ul {
 }
 
 @media screen and (max-width: 1800px) {
-    body {
-	
-    }
+    body {}
 }
 
 .e li {
@@ -98,9 +116,10 @@ footer ul {
     display: inline-block;
     padding-right: 100px;
 }
+
 hr {
-    width: 20%;
+    width: 50%;
     border-style: dotted none none;
-    border-width: 7px;
+    border-width: 10px;
     border-color: gray;
 }
