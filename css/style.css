@@ -1,0 +1,139 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right, #FFDEB4, #FFB4B4);
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    background-color: #B2A4FF;
+}
+
+nav li {
+    display: inline;
+    padding: 0px
+}
+
+nav li a {
+    padding: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: lightskyblue;
+}
+
+.main {
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 4vw;
+}
+
+.main p {
+    font-size: 2vw;
+}
+
+
+
+hr {
+    width: 50%;
+    border-style: dotted none none;
+    border-width: 10px;
+    border-color: gray;
+}
+
+footer {
+    text-align: center;
+    background-color: #B2A4FF;
+    width: 100%;
+    color: white;
+    flex-shrink: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 0.1vh;
+    padding-bottom: 0.1vh;
+}
+
+.planets {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.planets img:hover {
+    background-color: rgba(1, 1, 1, 0);
+    box-shadow: 0 0 50px 30px #89C4E1;
+    border-radius: 50%;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (max-width: 1000px) {
+    .main h1 {
+        font-size: 6vw;
+    }
+
+    .main p {
+        font-size: 4vw;
+    }
+
+    .grid-item {
+        transform: scale(60%);
+    }
+
+    .grid-container {
+        gap: 0;
+    }
+}
+
+.planet-info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    word-wrap: break-word;
+    width: 30%;
+    color: #F3F4ED;
+}
+.planet-info p{
+    font-size: 2.5vh;
+}
+
+.planet-info h1 {
+    color: black;
+    font-size: 6vh;
+}
+.planet-info table{
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: #111;
+}
+.planet-info td{
+    border: 1px solid;
+
+}
