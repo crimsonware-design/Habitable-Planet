@@ -17,6 +17,13 @@ li {
     list-style-type: none;
 }
 
+.sources {
+    position: relative;
+    top: -40%;
+    font-size: 3vw;
+    text-align: center;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -32,9 +39,10 @@ nav li {
 }
 
 nav li a {
-    padding: 14px;
+    padding: 14px 14px 13px 14px;
     color: white;
     text-decoration: none;
+    margin: -1.5px;
 }
 
 nav li a:hover {
@@ -111,6 +119,19 @@ footer {
 
     .grid-container {
         gap: 0;
+    }
+
+    body {
+        background-image: linear-gradient(to top, #FFDEB4, #FFB4B4)
+    }
+    .sources{
+        font-size: 8vw;
+    }
+}
+@media (max-height: 600px) {
+    .sources{
+        position: relative;
+        top: -10%;
     }
 }
 
