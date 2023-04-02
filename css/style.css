@@ -10,7 +10,7 @@ html, body {
 body {
     min-height: 100%;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 li {
@@ -19,9 +19,18 @@ li {
 
 .sources {
     position: relative;
-    top: -40%;
+    top: 0;
     font-size: 3vw;
     text-align: center;
+}
+
+.sources a {
+    text-decoration: none;
+    color: coral;
+}
+
+.sources a:hover {
+    color: lightskyblue;
 }
 
 nav ul {
@@ -124,22 +133,16 @@ footer {
     body {
         background-image: linear-gradient(to top, #FFDEB4, #FFB4B4)
     }
-    .sources{
+
+    .sources {
         font-size: 8vw;
-    }
-}
-@media (max-height: 600px) {
-    .sources{
-        position: relative;
-        top: -10%;
     }
 }
 
 .planet-info {
     margin: auto;
     text-align: center;
-    word-wrap: break-word;
-    width: 30%;
+    width: 40rem;
     color: #F3F4ED;
 }
 
